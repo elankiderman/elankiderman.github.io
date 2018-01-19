@@ -2,7 +2,7 @@ html, body {
   background:#fff;
   color:#333;
   text-align:center;
-  width:100%;
+  max-width:600px;
 }
 
 img.center {
