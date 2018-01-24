@@ -20,6 +20,7 @@ img.center {
     margin: 0 auto;
 }
 
-.facebook-container {
-  background-color:red;
+#inner {
+  display: table;
+  margin: 0 auto;
 }
