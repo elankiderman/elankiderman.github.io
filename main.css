@@ -20,27 +20,6 @@ img.center {
     margin: 0 auto;
 }
 
-.fb-customerchat.fb_iframe_widget iframe {
-    left:  auto;
-    transform:  none;
-    width:100%;
-}
-.back-top {
-    bottom:  100px;
-}
-@media only screen and (max-width: 480px) {
-    .fb-customerchat.fb_iframe_widget
-     iframe {
-        max-width: 360px !important;
-    }
-    .fb-customerchat.fb_iframe_widget+.fb_dialog {
-        right: 15px !important;
-    }
-}
-@media only screen and (max-width: 320px) {
-    .fb-customerchat.fb_iframe_widget
-     iframe {
-        right: 0 !important;
-        max-width: 100% !important;
-    }
+.facebook-container {
+  background-color:red;
 }
