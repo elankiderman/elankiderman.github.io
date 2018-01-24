@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Obsession with ketchup</title>
+    <link href="/main.css" rel="stylesheet" type="text/css" />
+    <meta property="og:title"              content="Quartz Obsession about ketchup" />
+    <meta property="og:description"        content="The Asian fish sauce that took over the world" />
+    <meta property="og:image"              content="https://qzprod.files.wordpress.com/2017/09/unnamed-3-e1506089182943.png" />
+    <script src="clipboard.min.js"></script>
+    <script>
+
+       window.dexterSettings = {
+          // a document query to the custom launcher
+          customLauncher: '#link'
+          // boolean indicating whether to hide the default launcher
+          , hideDefaultLauncher: true
+          // the icon on the top left of the message panel
+          //, logoIcon: 'https://...'
+          // the toggle icon to open the message panel
+          //, openIcon: 'https://...'
+          // the toggle icon to close the message panel
+          //, closeIcon: 'https://...'
+
+          /**
+           * The following methods are events that are called when the embed
+           * is loaded, opened, or closed. See the client side API discussion
+           * below for a description of functions available.
+           */
+
+          // a function that gives you a handle on the client side
+          // api (see below) after the embed is loaded
+          , onLoad: function (api) {
+            api.open()
+            api.replyTo("web start");
+
+            setTimeout(function() {
+              document.getElementsByClassName("inline-block--1GG44")[0].addEventListener("click", function(){
+                  //document.getElementById("demo").innerHTML = "Hello World";
+                  window.parent.location.href = "http://m.me/2003887143213910";
+                  console.log("clicked!");
+              });
+
+            }, 1000);
+
+            var clip = new Clipboard('.btn');
+
+            clip.on("success", function() {
+              document.body.insertAdjacentHTML('beforeend', '<div>that worked.</div>');
+            });
+            clip.on("error", function() {
+              document.body.insertAdjacentHTML('beforeend', '<div>that didn\'t work.</div>');
+            });
+
+
+          }
+          // called when the embed is opened
+
+          , onOpen: function (api) { }
+          // called when the embed is closed
+          , onClose: function (api) { }
+       }
+     </script>
+
+    <script>var i=document.createElement('iframe');i.style.width=0;i.style.height=0;i.style.display='none';i.src='javascript:false',i.botId='5fe8d2cd-a87e-4368-9c4e-e0f025382810',i.botTitle='obsession test',i.baseUrl='https://bots.rundexter.com';var d=document.getElementsByTagName('script');d=d[d.length-1],d.parentNode.insertBefore(i,d);var o=i.contentWindow.document;o.open()._l=function(){var e=this.createElement('script');e.src='https://rundexter.com/webwidget',this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close();</script>
+</head>
+
+<body>
+  <button class="btn" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+      Copy to clipboard
+  </button>
+
+</body>
+</html>
